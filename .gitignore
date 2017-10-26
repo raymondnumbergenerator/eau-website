@@ -1,0 +1,6 @@
+*.pyc
+*.DS_Store
+*.db
+*.htaccess
+venv/
+run.fcgi

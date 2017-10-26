@@ -1,6 +1,6 @@
 .club-title{
   font-family: 'Philosopher', sans-serif;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
   font-size: 40pt;
   text-align: center;
@@ -8,6 +8,8 @@
 }
 
 #clubs {
+  padding-top: 150px;
+  padding-bottom: 150px;
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -32,10 +34,6 @@
   transform: scale(1.07);
 }
 
-.club-card-image.mdl-card {
-  background: url('/static/images/clubs/TASA.jpg') center / cover;
-}
-
 .club-card-image > .mdl-card__actions {
   height: 15%;
   padding: 16px;
@@ -44,6 +42,7 @@
 }
 
 .club-card-image__filename {
+  font-family: 'Muli', sans-serif;
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;

@@ -1,0 +1,20 @@
+section {
+  padding: 0px;
+}
+
+.footer-primary {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  font-size: 105%
+}
+
+.footer-secondary {
+  padding-right: 10px;
+  line-height: 36px;
+  font-family: 'Muli', sans-serif;
+  color: #dddddd;
+}
+
+#ocf {
+  width: 75px;
+}

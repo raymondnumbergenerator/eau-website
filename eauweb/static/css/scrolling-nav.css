@@ -21,3 +21,8 @@ section {
 .nav-link {
   font-family: 'Muli', sans-serif;
 }
+
+.navbar {
+  opacity: 0.8;
+}
+

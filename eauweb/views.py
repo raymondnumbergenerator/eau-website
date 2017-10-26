@@ -11,10 +11,6 @@ def index():
 def officers():
     return render_template('officers.html')
 
-@app.route('/performances')
-def performances():
-    return render_template('performances.html')
-
 @app.route('/photos')
 def photos():
     return render_template('photos.html')

@@ -25,7 +25,7 @@
 
 .nightmarket-title {
   font-family: 'Philosopher', sans-serif;
-  padding-top: 140px;
+  padding-top: 150px;
   font-size: 45pt;
   white-space: nowrap;
   text-shadow: 1px 1px 4px #222222;
@@ -33,6 +33,6 @@
 
 .nightmarket-text {
   font-family: 'Muli', sans-serif;
-  padding-top: 50px;
+  padding-top: 40px;
   font-size: 12pt;
 }

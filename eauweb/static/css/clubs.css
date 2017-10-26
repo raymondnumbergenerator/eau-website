@@ -34,14 +34,14 @@
   transform: scale(1.07);
 }
 
-.club-card-image > .mdl-card__actions {
+.club-card > .mdl-card__actions {
   height: 15%;
   padding: 16px;
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
-.club-card-image__filename {
+.club-card-name {
   font-family: 'Muli', sans-serif;
   color: #ffffff;
   font-size: 14px;

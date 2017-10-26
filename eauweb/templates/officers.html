@@ -1,0 +1,119 @@
+{% extends 'base.html' %} {% block content %}
+
+<link rel="stylesheet" href="/static/css/officers.css">
+<section id="officers" class="bg-light">
+  <div class="officers-title">Officers</div>
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-1" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/davidchen.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">David Chen</span>
+          <div class="officer-card-title">President</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/jessicahan.jpg') center / cover;" data-toggle="modal" data-target="2">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Jessica Han</span>
+          <div class="officer-card-title">Vice President</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/lynnshiung.jpg') center / cover;" data-toggle="modal" data-target="3">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Lynn Shiung</span>
+          <div class="officer-card-title">Social Chair</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/jaychoi.jpg') center / cover;" data-toggle="modal" data-target="4">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Jay Choi</span>
+          <div class="officer-card-title">Treasurer</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/claudialim.jpg') center / cover;" data-toggle="modal" data-target="5">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Claudia Lim</span>
+          <div class="officer-card-title">Marketing Chair</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/leonachen.jpg') center / cover;" data-toggle="modal" data-target="6">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Leona Chen</span>
+          <div class="officer-card-title">Performance Chair</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/baileybounds.jpg') center / cover;" data-toggle="modal" data-target="7">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Bailey Bounds</span>
+          <div class="officer-card-title">Secretary</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/raymondng.jpg') center / cover;" data-toggle="modal" data-target="8">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Raymond Ng</span>
+          <div class="officer-card-title">Webmaster</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/allanchin.jpg') center / cover;" data-toggle="modal" data-target="9">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Allan Chin</span>
+          <div class="officer-card-title">Intern</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="officer-modal-1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/davidchen.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">David Chen</div>
+            <div class="officer-modal-text">President</div>
+            <div class="officer-modal-caption">"I'll think of one later"</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Senior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Environmental Economics and Policy</span>
+            </div>
+            <div class="officer-modal-info">
+              <a href="mailto:president@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--red mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">president@eau.berkeley.edu</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

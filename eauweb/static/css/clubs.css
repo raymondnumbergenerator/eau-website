@@ -1,4 +1,4 @@
-.club-title{
+.club-title {
   font-family: 'Philosopher', sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -34,7 +34,7 @@
   transform: scale(1.07);
 }
 
-.club-card > .mdl-card__actions {
+.club-card>.mdl-card__actions {
   height: 15%;
   padding: 16px;
   background: rgba(0, 0, 0, 0.5);

@@ -68,7 +68,7 @@
 
 .officer-modal>.mdl-card__title {
   color: #fff;
-  height: 512px;
+  height: 720px;
 }
 
 .officer-modal-name {
@@ -80,6 +80,11 @@
 
 .officer-modal-info {
   padding-top: 10px;
+}
+
+.officer-modal-email {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .officer-modal-caption {

@@ -1,0 +1,44 @@
+section {
+  padding: 0px;
+}
+
+.about-section {
+  background:
+      linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      ),
+  url('/static/images/about.jpg') center 30% no-repeat;
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-size: cover;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.full-overlay:after{
+  background:rgba(0, 0, 0, 0.75);
+}
+
+.about-font {
+  margin: 0;
+  text-align: left;
+  padding-left: 8%;
+  color: #eeeeee;
+}
+
+.about-title {
+  font-family: 'Philosopher', sans-serif;
+  padding-top: 30vh;
+  font-size: 45pt;
+  white-space: nowrap;
+  text-shadow: 1px 1px 4px #222222;
+}
+
+.about-text {
+  font-family: 'Muli', sans-serif;
+  padding-top: 40px;
+  margin-right: 50%;
+  font-size: 12pt;
+}

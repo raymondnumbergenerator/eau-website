@@ -4,40 +4,110 @@
 <section id="officers" class="bg-light">
   <div class="officers-title">Officers</div>
   <div class="mdl-grid">
-    {% for i in range(officers|length) %}
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-{{ i }}" onmouseover="this.style.cursor='pointer'">
-	    <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url({{'static/images/officers/' + officers[i].image }}) center / cover;">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-1" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/davidchen.jpg') center / cover;">
         <div class="mdl-card__title mdl-card--expand"></div>
         <div class="mdl-card__actions">
-		<span class="officer-card-name">{{ officers[i].name }}</span>
-		<div class="officer-card-title">{{ officers[i].position }}</div>
+          <span class="officer-card-name">David Chen</span>
+          <div class="officer-card-title">President</div>
         </div>
       </div>
     </div>
-    {% endfor %}
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-2" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/jessicahan.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Jessica Han</span>
+          <div class="officer-card-title">Vice President</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-3" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/lynnshiung.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Lynn Shiung</span>
+          <div class="officer-card-title">Social Chair</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-4" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/jaychoi.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Jay Choi</span>
+          <div class="officer-card-title">Treasurer</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-5" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/claudialim.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Claudia Lim</span>
+          <div class="officer-card-title">Marketing Chair</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-6" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/leonachen.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Leona Chen</span>
+          <div class="officer-card-title">Performance Chair</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-7" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/baileybounds.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Bailey Bounds</span>
+          <div class="officer-card-title">Secretary</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-8" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/raymondng.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Raymond Ng</span>
+          <div class="officer-card-title">Webmaster</div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-9" onmouseover="this.style.cursor='pointer'">
+      <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url('/static/images/officers/allanchin.jpg') center / cover;">
+        <div class="mdl-card__title mdl-card--expand"></div>
+        <div class="mdl-card__actions">
+          <span class="officer-card-name">Allan Chin</span>
+          <div class="officer-card-title">Intern</div>
+        </div>
+      </div>
+    </div>
   </div>
-  {% for i in range(officers|length)  %} 
-  <div id="officer-modal-{{i}}" class="modal fade" role="dialog">
+
+  <div id="officer-modal-1" class="modal fade" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="officer-modal mdl-card mdl-shadow--4dp">
-		<div class="mdl-card__title" style="background: url({{'static/images/officers/'+officers[i].image }}) center / cover;"></div>
+          <div class="mdl-card__title" style="background: url('/static/images/officers/davidchen.jpg') center / cover;"></div>
           <div class="mdl-card__supporting-text">
-		  <div class="officer-modal-name">{{ officers[i].name }}</div>
-		  <div class="officer-modal-text">{{ officers[i].position }}</div>
-		  <div class="officer-modal-caption"> {{ officers[i].quote }}</div>
+            <div class="officer-modal-name">David Chen</div>
+            <div class="officer-modal-text">President</div>
+            <div class="officer-modal-caption">"I'll think of one later"</div>
             <div class="officer-modal-info">
               <span class="officer-modal-category">Year:</span>
-	      <span class="officer-modal-text">{{ officers[i].year }}</span>
+              <span class="officer-modal-text">Senior</span>
             </div>
             <div class="officer-modal-info">
               <span class="officer-modal-category">Major:</span>
-	      <span class="officer-modal-text">{{ officers[i].major }}</span>
+              <span class="officer-modal-text">Environmental Economics and Policy</span>
             </div>
             <div class="officer-modal-email">
-		    <a href="mailto:{{ officers[i].contact }}" class="mdl-chip mdl-chip--contact">
-                      <span class="mdl-chip__contact mdl-color--indigo mdl-color-text--white material-icons">mail</span>
-		      <span class="mdl-chip__text">{{ officers[i].contact }}</span>
+              <a href="mailto:president@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--blue mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">president@eau.berkeley.edu</span>
               </a>
             </div>
           </div>
@@ -45,6 +115,229 @@
       </div>
     </div>
   </div>
-  {% endfor %}
+  <div id="officer-modal-2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/jessicahan.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">Jessica Han</div>
+            <div class="officer-modal-text">Vice President</div>
+            <div class="officer-modal-caption">Growing up in a Koreantown in Shanghai China, with part of my family in Japan, and having spent weeks exploring night markets in Taiwan, I know that East Asia is my roots, my home and where my heart always belongs.</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Junior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Media Studies</span>
+            </div>
+            <div class="officer-modal-email">
+              <a href="mailto:performance@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--red mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">performance@eau.berkeley.edu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="officer-modal-3" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/lynnshiung.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">Lynn Shiung</div>
+            <div class="officer-modal-text">Social Chair</div>
+            <div class="officer-modal-caption">Hi my name is Lynn and I am a senior majoring in Theater Dance and Performance Studies and minoring in Korean Language. I like to invent boba flavors and force my friends to try them. I like ALL ANIMALS.</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Senior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Theater Dance and Performance Studies</span>
+            </div>
+            <div class="officer-modal-email">
+              <a href="mailto:social@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--pink mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">social@eau.berkeley.edu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="officer-modal-4" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/jaychoi.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">Jay Choi</div>
+            <div class="officer-modal-text">Treasurer</div>
+            <div class="officer-modal-caption">I love playing soccer, travelling, and partying. I have lived in Korea, Boston, have been living in Virginia since 2005, went to boarding schools in Boston and New York, and came to Cal to experience my first California-living.</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Junior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Business Administration & Operations Research and Management Science</span>
+            </div>
+            <div class="officer-modal-email">
+              <a href="mailto:treasurer@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--purple mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">treasurer@eau.berkeley.edu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="officer-modal-5" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/claudialim.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">Claudia Lim</div>
+            <div class="officer-modal-text">Marketing Chair</div>
+            <div class="officer-modal-caption">""I went to LACMA" - David Chen" - Claudia Lim</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Senior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Economics & Cognitive Science</span>
+            </div>
+            <div class="officer-modal-email">
+              <a href="mailto:marketing@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--yellow mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">marketing@eau.berkeley.edu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="officer-modal-6" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/leonachen.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">Leona Chen</div>
+            <div class="officer-modal-text">Performance Chair</div>
+            <div class="officer-modal-caption">Hiya! My name is Leona like the league champ and I love meeting new friends, eating, sleeping and sharing Taiwanese culture! I hope to celebrate it with you at the EAU Night Market :)</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Junior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Psychology</span>
+            </div>
+            <div class="officer-modal-email">
+              <a href="mailto:performance@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--lime mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">performance@eau.berkeley.edu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="officer-modal-7" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/baileybounds.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">Bailey Bounds</div>
+            <div class="officer-modal-text">Secretary</div>
+            <div class="officer-modal-caption">I am a junior studying economics and I'm from Seattle.</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Junior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Economics</span>
+            </div>
+            <div class="officer-modal-email">
+              <a href="mailto:secretary@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--brown mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">secretary@eau.berkeley.edu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="officer-modal-8" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/raymondng.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">Raymond Ng</div>
+            <div class="officer-modal-text">Webmaster</div>
+            <div class="officer-modal-caption">uʍop ǝpᴉsdn ɯ,I ʞuᴉɥʇ I</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Senior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Computer Science</span>
+            </div>
+            <div class="officer-modal-email">
+              <a href="mailto:web@eau.berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--indigo mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">web@eau.berkeley.edu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="officer-modal-9" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="officer-modal mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title" style="background: url('/static/images/officers/allanchin.jpg') center / cover;"></div>
+          <div class="mdl-card__supporting-text">
+            <div class="officer-modal-name">Allan Chin</div>
+            <div class="officer-modal-text">Intern</div>
+            <div class="officer-modal-caption">Hi my name is Allan, but I also go by Kyle.</div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Year:</span>
+              <span class="officer-modal-text">Junior</span>
+            </div>
+            <div class="officer-modal-info">
+              <span class="officer-modal-category">Major:</span>
+              <span class="officer-modal-text">Environmental Economics and Policy</span>
+            </div>
+            <div class="officer-modal-email">
+              <a href="mailto:allanchin@berkeley.edu" class="mdl-chip mdl-chip--contact">
+                      <span class="mdl-chip__contact mdl-color--green mdl-color-text--white material-icons">mail</span>
+                      <span class="mdl-chip__text">allanchin@berkeley.edu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock %}

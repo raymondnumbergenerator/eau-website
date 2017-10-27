@@ -4,7 +4,6 @@
   height: 800px;
   width: auto;
   background-size: cover;
-  background-size: 100% auto;
 }
 
 .full-overlay:after {
@@ -39,7 +38,6 @@
   height: 550px;
   width: auto;
   background-size: cover;
-  background-size: 100% auto;
   background-attachment: fixed;
 }
 

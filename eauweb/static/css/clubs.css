@@ -47,3 +47,36 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+.mdl-card__supporting-text {
+  width: 100%;
+}
+
+.club-modal>.mdl-card__title {
+  color: #fff;
+  height: 50vh;
+}
+
+.club-modal.mdl-card {
+  width: 100%;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+}
+
+.club-modal-name {
+  color: #666666;
+  font-family: 'Muli', sans-serif;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+
+.club-modal-text {
+  padding-top: 3px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.club-modal-link {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}

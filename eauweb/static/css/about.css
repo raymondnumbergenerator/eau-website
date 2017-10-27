@@ -1,5 +1,5 @@
 .about-section {
-  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url('/static/images/about.jpg') center 30% no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/about.jpg') center 30% no-repeat;
   position: relative;
   height: 800px;
   width: auto;

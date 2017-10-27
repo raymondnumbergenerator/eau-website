@@ -61,7 +61,7 @@
 }
 
 .officer-modal.mdl-card {
-  width: 512px;
+  width: 100%;
   font-family: 'Muli', sans-serif;
   text-align: center;
 }

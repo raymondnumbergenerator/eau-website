@@ -1,4 +1,6 @@
-# Development Setup
+# eau-website
+
+## Development Setup
 
 1. Clone this repository
 2. `cd` into the directory and set up the virtual environment with `virtualenv venv`

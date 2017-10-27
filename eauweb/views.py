@@ -2,7 +2,7 @@ from . import app
 from flask import render_template
 from flask import url_for
 
-# from db import app
+from db import get_db
 
 @app.route('/')
 def index():
@@ -14,7 +14,10 @@ def nightmarket():
 
 @app.route('/officers')
 def officers():
-    return render_template('officers.html')
+    dtb = get_db()
+    cur = dtb.execute('select * from officer')
+    officers = cur.fetchall()
+    return render_template('officers.html', officers=officers)
 
 @app.route('/photos')
 def photos():

@@ -8,6 +8,10 @@ from db import app
 def index():
    return render_template('index.html')
 
+@app.route('/nightmarket')
+def nightmarket():
+    return render_template('nightmarket.html')
+
 @app.route('/officers')
 def officers():
     return render_template('officers.html')

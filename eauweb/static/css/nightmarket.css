@@ -1,33 +1,47 @@
-.nightmarket-section {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/nightmarket.jpeg') center 30% no-repeat;
+.performance-title {
+  font-family: 'Philosopher', sans-serif;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-size: 40pt;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.performance-table {
+  margin: auto;
+  padding: 50px;
+}
+
+.performance-table th {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+}
+
+.performance-table td {
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+}
+
+.performance-section {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/danceworx.jpg') center 30% no-repeat;
   position: relative;
-  height: 500px;
+  height: 300px;
   width: auto;
   background-size: cover;
   background-size: 100% auto;
   background-attachment: fixed;
 }
 
-.full-overlay:after {
-  background: rgba(0, 0, 0, 0.75);
+.food-section {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/food.jpg') center 30% no-repeat;
+  position: relative;
+  height: 300px;
+  width: auto;
+  background-size: cover;
+  background-size: 100% auto;
+  background-attachment: fixed;
 }
 
-.nightmarket-font {
-  margin: 0;
-  text-align: center;
-  color: #eeeeee;
-}
-
-.nightmarket-title {
-  font-family: 'Philosopher', sans-serif;
-  padding-top: 150px;
-  font-size: 45pt;
-  white-space: nowrap;
-  text-shadow: 1px 1px 4px #222222;
-}
-
-.nightmarket-text {
-  font-family: 'Muli', sans-serif;
-  padding-top: 40px;
-  font-size: 12pt;
+.performance-list {
+  padding: 100px;
 }

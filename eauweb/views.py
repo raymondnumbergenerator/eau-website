@@ -2,7 +2,7 @@ from . import app
 from flask import render_template
 from flask import url_for
 
-from db import app
+# from db import app
 
 @app.route('/')
 def index():

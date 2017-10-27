@@ -1,82 +1,82 @@
 .club-title {
-  font-family: 'Philosopher', sans-serif;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 40pt;
-  text-align: center;
-  color: #0d0d0d;
+    font-family: 'Philosopher', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 40pt;
+    text-align: center;
+    color: #0d0d0d;
 }
 
 #clubs {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 15%;
-  padding-right: 15%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .mdl-cell {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .club-card {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  transition: all .2s ease-in-out;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: all .2s ease-in-out;
 }
 
 .club-card:hover {
-  -moz-transform: scale(1.07);
-  -webkit-transform: scale(1.07);
-  transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
 }
 
 .club-card>.mdl-card__actions {
-  height: 15%;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
+    height: 15%;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .club-card-name {
-  font-family: 'Muli', sans-serif;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
+    font-family: 'Muli', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .mdl-card__supporting-text {
-  width: 100%;
+    width: 100%;
 }
 
 .club-modal>.mdl-card__title {
-  color: #fff;
-  height: 50vh;
+    color: #fff;
+    height: 50vh;
 }
 
 .club-modal.mdl-card {
-  width: 100%;
-  font-family: 'Muli', sans-serif;
-  text-align: center;
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
 }
 
 .club-modal-name {
-  color: #666666;
-  font-family: 'Muli', sans-serif;
-  padding-bottom: 5px;
-  font-size: 22px;
+    color: #666666;
+    font-family: 'Muli', sans-serif;
+    padding-bottom: 5px;
+    font-size: 22px;
 }
 
 .club-modal-text {
-  padding-top: 3px;
-  color: #666666;
-  font-size: 14px;
+    padding-top: 3px;
+    color: #666666;
+    font-size: 14px;
 }
 
 .club-modal-link {
-  padding-top: 20px;
-  padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }

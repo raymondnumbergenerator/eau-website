@@ -9,7 +9,7 @@ Run `pip install venv` and `brew install python3` if you do not have them.
 ## Development Setup
 
 1. Fork this repository and clone your fork.
-2. Add this repository as the upstream remote with `git remote add upstream https://github.com/raymondnumbergenerator/eau-website.git`.
+2. Add this repository as the upstream remote with `git remote add upstream <URL for this repository>`.
 
 ## First-time setup
 1. `cd` into the directory and set up the virtual environment with `virtualenv -p python3 venv`.

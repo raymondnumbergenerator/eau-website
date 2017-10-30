@@ -1,8 +1,8 @@
 from . import app
+from . import db
 from flask import render_template
 from flask import url_for
 
-from db import get_db
 
 @app.route('/')
 def index():

@@ -20,6 +20,8 @@ Run `pip install venv` and `brew install python3` if you do not have them.
 1. Make sure you're in the virtual environment. If not, run `source venv/bin/activate`.
 2. `python run.py` to start the website.
 
+## Workflow
+
 #### Keeping your fork updated
 1. `git fetch upstream` to fetch changes from this repository.
 2. `git checkout master` to switch back to your master branch.

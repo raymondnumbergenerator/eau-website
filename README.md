@@ -1,10 +1,12 @@
 # eau-website
 
 ## Requirements
-- venv
+- virtualenvironment
 - Python 3
 
-Run `pip install venv` and `brew install python3` if you do not have them.
+If you don't have python3 or virtualenvironment run `pip install venv` and `brew install python3`.
+
+If you don't have pip or brew just do some Googling to figure it out.
 
 ## Development Setup
 

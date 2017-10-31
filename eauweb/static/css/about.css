@@ -20,7 +20,7 @@
 .about-title {
     font-family: 'Philosopher', sans-serif;
     padding-top: 30vh;
-    font-size: 45pt;
+    font-size: 3.5em;
     white-space: nowrap;
     text-shadow: 1px 1px 4px #222222;
 }
@@ -28,8 +28,8 @@
 .about-text {
     font-family: 'Muli', sans-serif;
     padding-top: 40px;
-    margin-right: 50%;
-    font-size: 12pt;
+    margin-right: 40%;
+    font-size: 1.1em;
 }
 
 .nightmarket-section {
@@ -54,13 +54,13 @@
 .nightmarket-title {
     font-family: 'Philosopher', sans-serif;
     padding-top: 150px;
-    font-size: 45pt;
+    font-size: 3.5em;
     white-space: nowrap;
     text-shadow: 1px 1px 4px #222222;
 }
 
 .nightmarket-text {
     font-family: 'Muli', sans-serif;
-    padding-top: 40px;
-    font-size: 12pt;
+    padding-top: 2em;
+    font-size: 1.1em;
 }

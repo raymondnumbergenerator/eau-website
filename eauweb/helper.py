@@ -14,7 +14,6 @@ MDL_COLORS = [
     'mdl-color--light-blue-A400',
     'mdl-color--teal',
     'mdl-color--green',
-    'mdl-color--green-A400',
     'mdl-color--light-green',
     'mdl-color--lime',
     'mdl-color--amber',

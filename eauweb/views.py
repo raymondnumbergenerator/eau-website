@@ -1,12 +1,12 @@
 from . import app
 from . import db
+from . import helper
 from flask import render_template
 from flask import url_for
 
-
 @app.route('/')
 def index():
-   return render_template('index.html')
+   return render_template('index.html', helper=helper)
 
 @app.route('/nightmarket')
 def nightmarket():
@@ -14,7 +14,7 @@ def nightmarket():
 
 @app.route('/officers')
 def officers():
-    return render_template('officers.html')
+    return render_template('officers.html', helper=helper)
 
 @app.route('/photos')
 def photos():

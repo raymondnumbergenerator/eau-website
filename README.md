@@ -11,7 +11,7 @@ If you don't have pip or brew just do some Googling to figure it out.
 ## Development Setup
 
 1. Fork this repository and clone your fork.
-2. Add this repository as the upstream remote with `git remote add upstream <URL for this repository>`.
+2. Add this repository as the upstream remote with `git remote add upstream <URL for this repository>`
 
 ## First-time setup
 1. `cd` into the directory and set up the virtual environment with `virtualenv -p python3 venv`.

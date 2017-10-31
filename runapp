@@ -1,0 +1,5 @@
+#!/bin/bash -e
+. ~/eau-website/venv/bin/activate
+PYTHONPATH=~/eau-website:$PYTHONPATH \
+    exec gunicorn -w 2 -b unix:/srv/apps/$(whoami)/$(whoami).sock \
+    --log-file - eauweb:app

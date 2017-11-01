@@ -71,7 +71,7 @@ class Officer(db.Model):
 	def __repr__(self):
 		return '<Name %r>' % self.name
 
-admin = Admin(app)
-admin.add_view(ModelView(Officer, db.session))
-path = op.join(op.dirname(__file__), 'static')
-admin.add_view(FileAdmin(path, '/static/pictures/', name='Picture Files'))
+#admin = Admin(app)
+#admin.add_view(ModelView(Officer, db.session))
+#path = op.join(op.dirname(__file__), 'static')
+#admin.add_view(FileAdmin(path, '/static/pictures/', name='Picture Files'))

@@ -72,6 +72,6 @@ class Officer(db.Model):
 		return '<Name %r>' % self.name
 
 #admin = Admin(app)
-#dmin.add_view(ModelView(Officer, db.session))
+#admin.add_view(ModelView(Officer, db.session))
 #path = op.join(op.dirname(__file__), 'static')
 #admin.add_view(FileAdmin(path, '/static/pictures/', name='Picture Files'))

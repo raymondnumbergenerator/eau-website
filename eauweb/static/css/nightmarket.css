@@ -15,11 +15,13 @@
 .performance-table th {
   font-family: 'Muli', sans-serif;
   font-size: 16px;
+  text-align: center
 }
 
 .performance-table td {
   font-family: 'Muli', sans-serif;
   font-size: 14px;
+  text-align: left;
 }
 
 .performance-section {
@@ -41,4 +43,5 @@
 
 .performance-list {
   padding: 100px;
+  text-align: left;
 }

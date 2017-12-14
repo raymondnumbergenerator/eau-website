@@ -14,7 +14,10 @@ def nightmarket():
 
 @app.route('/officers')
 def officers():
-    return render_template('officers.html', helper=helper)
+    dtb = db.get_db()
+    cur = dtb.execute('select * from officer')
+    officers = cur.fetchall()
+    return render_template('officers.html', officers=officers, helper=helper)
 
 @app.route('/photos')
 def photos():

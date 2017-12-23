@@ -71,7 +71,25 @@ class Officer(db.Model):
 	def __repr__(self):
 		return '<Name %r>' % self.name
 
+class Club(db.Model):
+
+        id = db.Column(db.Integer, primary_key=True)
+        name = db.Column(db.String(80))
+        description = db.Column(db.Text())
+        image = db.Column(db.String(80))
+        website = db.Column(db.String(80))
+
+        def __init__(self, name='', description='', image='', website=''):
+            self.name = name
+            self.description = description
+            self.image = image
+            self.website = website
+
+        def __repr__(self):
+            return '<Name %r>' % self.name
+
 admin = Admin(app)
 admin.add_view(ModelView(Officer, db.session))
 path = op.join(op.dirname(__file__), 'static')
 admin.add_view(FileAdmin(path, '/static/pictures/', name='Picture Files'))
+admin.add_view(ModelView(Club, db.session))

@@ -6,7 +6,10 @@ from flask import url_for
 
 @app.route('/')
 def index():
-   return render_template('index.html', helper=helper)
+    dtb = db.get_db()
+    cur = dtb.execute('select * from club order by name')
+    clubs = cur.fetchall()
+    return render_template('index.html', clubs=clubs, helper=helper)
 
 @app.route('/nightmarket')
 def nightmarket():

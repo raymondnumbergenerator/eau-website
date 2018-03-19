@@ -21,7 +21,7 @@ app.config.update(dict(
     USERNAME='admin',
     PASSWORD='default'
     ))
-with open('ADMIN_CRED', 'r') as admin_cred:
+with open(os.path.dirname(os.path.realpath(__file__)) + '/ADMIN_CRED', 'r') as admin_cred:
     cred = admin_cred.readlines()
 app.config['ADMIN_CREDENTIALS'] = (cred[0].replace('\n','') , cred[1].replace('\n',''))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///eau.db'

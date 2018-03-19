@@ -45,12 +45,14 @@
                     <div class="mdl-card__supporting-text">
 			    <div class="club-modal-name">{{ clubs[i].name }}</div>
 			    <div class="club-modal-text">{{ clubs[i].description }}</div>
+			{% if clubs[i].website != None %}
                         <div class="club-modal-link">
-				<a href="{{ clubs[i].website }}" class="mdl-chip mdl-chip--contact">
+				<a href="https://{{ clubs[i].website }}" class="mdl-chip mdl-chip--contact">
                       <span class="mdl-chip__contact {{ helper.random_mdl_color() }} mdl-color-text--white material-icons">link</span>
 		      <span class="mdl-chip__text">{{ clubs[i].website }}</span>
               </a>
                         </div>
+			{% endif %}
                     </div>
                 </div>
             </div>

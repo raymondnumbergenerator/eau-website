@@ -4,7 +4,7 @@
 <section id="officers" class="bg-light">
   <div class="officers-title">Officers</div>
   <div class="mdl-grid">
-    {% for i in range(officers|length) %}
+  {% for i in range(officers|length) %}
     <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone" data-toggle="modal" data-target="#officer-modal-{{ i }}" onmouseover="this.style.cursor='pointer'">
 	    <div class="officer-card mdl-card mdl-shadow--2dp" style="background: url({{'static/images/officers/' + officers[i].image }}) center / cover;">
         <div class="mdl-card__title mdl-card--expand"></div>
@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    {% endfor %}
+  {% endfor %}
   </div>
   {% for i in range(officers|length)  %} 
   <div id="officer-modal-{{i}}" class="modal fade" role="dialog">
@@ -36,7 +36,7 @@
             </div>
             <div class="officer-modal-email">
 		    <a href="mailto:{{ officers[i].contact }}" class="mdl-chip mdl-chip--contact">
-                      <span class="mdl-chip__contact mdl-color--indigo mdl-color-text--white material-icons">mail</span>
+		      <span class="mdl-chip__contact {{ helper.random_mdl_color() }} mdl-color-text--white material-icons">mail</span>
 		      <span class="mdl-chip__text">{{ officers[i].contact }}</span>
               </a>
             </div>

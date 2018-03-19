@@ -20,6 +20,7 @@ def officers():
     dtb = db.get_db()
     cur = dtb.execute('select * from officer')
     officers = cur.fetchall()
+    officers = sorted(officers, key = lambda o: helper.officer_sort_order(o['position']))
     return render_template('officers.html', officers=officers, helper=helper)
 
 @app.route('/photos')

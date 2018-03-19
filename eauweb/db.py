@@ -21,7 +21,9 @@ app.config.update(dict(
     USERNAME='admin',
     PASSWORD='default'
     ))
-app.config['ADMIN_CREDENTIALS'] = ('eau', 'werewolves')
+with open('ADMIN_CRED', 'r') as admin_cred:
+    cred = admin_cred.readlines()
+app.config['ADMIN_CREDENTIALS'] = (cred[0].replace('\n','') , cred[1].replace('\n',''))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///eau.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
@@ -99,6 +101,6 @@ class ModelView(ModelView):
 admin = Admin(app)
 admin.add_view(ModelView(Officer, db.session))
 path = op.join(op.dirname(__file__), 'static')
-admin.add_view(FileAdmin(path, '/static/pictures/', name='Picture Files'))
+admin.add_view(FileAdmin(path, '/static/', name='Picture Files'))
 admin.add_view(ModelView(Club, db.session))
 

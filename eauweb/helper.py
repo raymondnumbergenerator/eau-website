@@ -26,18 +26,20 @@ OFFICER_POSITIONS = {
         'Vice President' : 2,
         'Finance Chair': 3,
         'Performance Chair' : 4,
-        'Marketing Chair': 5,
-        'Social Chair': 6,
-        'Technology Chair': 7,
-        'Event Chair': 8,
-        'Finance Chair Intern' : 9,
-        'Performance Chair Intern' : 10,
-        'Marketing Chair Intern' : 11,
-        'Social Chair Intern': 12,
-        'Technology Chair Intern' : 13, 
-        'Event Chair Intern' : 14, 
-        'Dinosaur' : 15, 
-        'Senior Advisor' : 15
+        'Collab Chair': 5,
+        'Marketing Chair': 6,
+        'Social Chair': 7,
+        'Technology Chair': 8,
+        'Event Chair': 9,
+        'Finance Chair Intern' : 10,
+        'Performance Chair Intern' : 11,
+        'Collab Chair Intern': 12,
+        'Marketing Chair Intern' : 13,
+        'Social Chair Intern': 14,
+        'Technology Chair Intern' : 15,
+        'Event Chair Intern' : 16,
+        'Dinosaur' : 17, 
+        'Senior Advisor' : 18
     }
 
 def random_mdl_color():

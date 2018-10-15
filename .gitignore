@@ -7,5 +7,6 @@ run.fcgi
 
 eauweb/ADMIN_CRED
 eauweb/migrations
+eauweb/static/images/about.jpg
 eauweb/static/images/clubs
 eauweb/static/images/officers

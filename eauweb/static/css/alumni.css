@@ -1,0 +1,39 @@
+.alumni-font {
+    margin: 0;
+    text-align: left;
+    color: #000000;
+}
+
+.alumni-title {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 3.5em;
+    padding-top: 80px;
+    white-space: nowrap;
+    text-shadow: 1px 1px 4px #222222;
+    text-align: center;
+    }
+
+.alumni-text {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 5%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+@media all and (max-width 800px) {
+	.column {
+		justify-content: space-around;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.column {
+		flex-direction: column;
+	}
+}

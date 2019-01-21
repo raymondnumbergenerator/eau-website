@@ -26,3 +26,7 @@ def officers():
 @app.route('/photos')
 def photos():
     return render_template('photos.html')
+
+@app.route('/alumni')
+def alumni():
+    return render_template('alumni.html')

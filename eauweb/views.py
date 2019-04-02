@@ -3,6 +3,7 @@ from . import db
 from . import helper
 from flask import render_template
 from flask import url_for
+from flask import redirect
 
 @app.route('/')
 def index():
@@ -11,7 +12,7 @@ def index():
     clubs = cur.fetchall()
     return render_template('index.html', clubs=clubs, helper=helper)
 
-@app.route('/nightmarket')
+@app.route('/market')
 def nightmarket():
     return render_template('nightmarket.html')
 
@@ -26,3 +27,13 @@ def officers():
 @app.route('/photos')
 def photos():
     return render_template('photos.html')
+
+@app.route('/<string:url>')
+def shorturl(url):
+    dtb = db.get_db()
+    cur = dtb.execute('select * from short_url')
+    longurl = '/'
+    for row in cur:
+        if row['short'] == url:
+            longurl = row['long']
+    return redirect(longurl, code=302)

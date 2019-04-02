@@ -12,7 +12,7 @@ def index():
     clubs = cur.fetchall()
     return render_template('index.html', clubs=clubs, helper=helper)
 
-@app.route('/nightmarket')
+@app.route('/market')
 def nightmarket():
     return render_template('nightmarket.html')
 

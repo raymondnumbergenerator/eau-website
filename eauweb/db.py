@@ -88,6 +88,18 @@ class Club(db.Model):
     def __repr__(self):
         return '<Name %r>' % self.name
 
+class ShortUrl(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    long = db.Column(db.Text())
+    short = db.Column(db.Text())
+
+    def __init__(self, long='', short=''):
+        self.long = long
+        self.short = short
+
+    def __repr__(self):
+        return '<Original Url: %r Shortened Url: %r' % (long, short)
+
 class ModelView(ModelView):
     def is_accessible(self):
         auth = request.authorization or request.environ.get('REMOTE_USER')  # workaround for Apache
@@ -98,9 +110,12 @@ class ModelView(ModelView):
             ))
         return True
 
+db.create_all()
+db.session.commit()
+
 admin = Admin(app)
 admin.add_view(ModelView(Officer, db.session))
 path = op.join(op.dirname(__file__), 'static')
 admin.add_view(FileAdmin(path, '/static/', name='Picture Files'))
 admin.add_view(ModelView(Club, db.session))
-
+admin.add_view(ModelView(ShortUrl, db.session))
